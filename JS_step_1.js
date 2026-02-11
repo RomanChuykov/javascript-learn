@@ -20,7 +20,8 @@
     }
 
 Проверить, чтобы все работало без ошибок в консоли */
-
+function doHomework1(){
+    
 let numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
   
  const personalMovieDB = {
@@ -44,3 +45,4 @@ lastRate = prompt('На сколько оцените его?', '');
  
  console.log("personalmovie.db",personalMovieDB)
 //personalMovieDB.movies
+}

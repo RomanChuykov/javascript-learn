@@ -10,7 +10,9 @@ false - выводит в консоль главный объект прогр�
 genres
 
 P.S. Функции вызывать не обязательно */
+
 'use strict';
+function doHomework3() {
 let numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
 
 const personalMovieDB = {
@@ -21,10 +23,13 @@ const personalMovieDB = {
   privat: true,
 };
 
-watchLastMovie();
-countMovies();
-askGenres();
-showMyDB();
+  
+  
+  watchLastMovie();
+  countMovies();
+  askGenres();
+  showMyDB();
+
 
 function watchLastMovie() {
   let lastFilm;
@@ -50,6 +55,7 @@ function countMovies() {
   } else if (+personalMovieDB.count <= 30) {
     alert("Вы киноман");
   } else {
+    console.log(personalMovieDB.count)
     alert("Произошла ошибка");
   }
 }
@@ -69,4 +75,5 @@ function showMyDB() {
   personalMovieDB.privat == false
     ? console.log(personalMovieDB)
     : console.log("this is privat");
+}
 }
